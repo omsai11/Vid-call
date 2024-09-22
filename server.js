@@ -7,6 +7,7 @@ const io = require('socket.io')(server);
 
 // Set EJS as view engine for rendering HTML templates
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the 'public' directory
 app.use(express.static('public'));
