@@ -2,9 +2,10 @@
   "name": "vid-call",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "Devstart" : "nodemon server.js"
+    "start": "node server.js",     
+    "build":  "babel src -d dist"
   },
   "repository": {
     "type": "git",
